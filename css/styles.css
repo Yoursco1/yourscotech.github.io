@@ -57,14 +57,9 @@ a {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  min-height: 75px;
-  padding: 0px 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #eee;
 }
 
 @media only screen and (max-width: 600px) {
@@ -115,24 +110,15 @@ header {
 }
 
 nav {
-  font-weight: 500px;
+ display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
-  nav {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    padding: 0 50px;
-  }
+
   
-  nav li {
-    padding-bottom: 5px;
-  }
-}
+
 
 nav > ul {
   width: 35vw;
@@ -143,9 +129,11 @@ nav > ul {
 
 @media (max-width: 767px) {
   nav > ul {
-    flex-direction: row;
-    width: auto;
-    margin: auto;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -244,11 +232,7 @@ nav > ul {
   color: rgba(68, 128, 0, 0.973);
 }
 
-@media only screen and (max-width: 550px) {
-  #About-Us .icon {
-    display: none;
-  }
-}
+
 
 #About-Us .desc {
   display: flex;
@@ -265,20 +249,8 @@ nav > ul {
   letter-spacing: 0.6px;
 }
 
-@media only screen and (max-width: 550px) {
-  #About-Us .desc {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    height: auto;
-  }
-}
 
-@media only screen and (max-width: 650px) {
-  #About-Us {
-    margin-top: 0;
-  }
-}
+
 
 .services{
   font-size: 1.2em;
@@ -356,24 +328,17 @@ nav > ul {
   #accessories {
     flex-direction: column;
   }
-  .product {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
+
 }
 
 footer {
   margin-top: 30px;
   background-color: #ddd;
   padding: 20px;
-}
-
-footer > ul {
-  display: flex;
+    display: flex;
   justify-content: flex-end;
 }
+
 
 footer > ul > li {
   padding: 0 10px;

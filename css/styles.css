@@ -13,9 +13,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-#page-wrapper {
-  position: relative;
-}
+    #page-wrapper {
+      position: relative;
+    }
 
 li {
   list-style: none;
@@ -34,11 +34,6 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 600px){
-  .container {
-    margin-top: 10px;
-  }
-}
 
 .btn {
   padding: 0 20px;
@@ -54,6 +49,7 @@ a {
 
 .grid {
   display: flex;
+  align-items: flex-start;
 }
 
 header {
@@ -61,166 +57,137 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-
-@media only screen and (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-  }
-}
-
-/**@media only screen and (max-width: 767px) {
-  nav-bar {
-    margin-bottom: 150px;
-  }
-}**/
-
-.logo {
-  width: 60vw;
-}
-
-@media only screen and (max-width: 767px) {
-  .logo {
-    margin-top: 15px;
-    width: 100%;
-    position: relative;
-  }
-}
-
-.logo > img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
+#header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-left: 20px;
-  opacity: 1.4;
-  /**box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);**/
+  padding: 10px;
+  background-color: #eee; /* Add a background color for better visibility */
+}
+
+header .logo {
+  margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+
+
+
+header #header-img {
+  max-width: 100%; /* Ensure the logo image is responsive */
 }
 
 /**#header-img{
   height: auto;
 }**/
 
-@media only screen and (max-width: 767px) {
-  .logo > img {
-    margin: 0 auto;
-  }
+
+
+header nav {
+  display: flex;
+  flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+  justify-content: center; /* Center the navigation items */
 }
 
-nav {
- display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
+header nav li {
+  margin: 15px; /* Add spacing between navigation items */
 }
 
-
+header .nav-link {
+  padding: 5px 10px; /* Adjust padding for better touch interaction */
+  border-radius: 5px; /* Add rounded corners to the links */
+  background-color: #f0f0f0; /* Background color for links */
+  text-decoration: none;
+  color: #333; /* Text color */
+}
   
 
 
-nav > ul {
-  width: 35vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+header nav ul {
+  padding: 0;
+  list-style: none;
 }
 
-@media (max-width: 767px) {
-  nav > ul {
-   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-    width: 100%;
-    margin-top: 10px;
-  }
-}
 
 #hero {
-
-  font-size: 1.00rem;
-  font-style: italic;
+  font-size: 1rem; /* Adjust font size for better readability */
+  font-style: normal; /* Reset font style to normal for improved legibility */
   font-weight: 400;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: none; /* Remove text shadow for clarity */
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 200px;
-  margin-top: 50px;
+  padding: 20px; /* Add padding for spacing */
+  margin-top: 20px; /* Adjust top margin for better alignment */
 }
 
-.yName{
-  font-style: italic;
-  font-size: 1.5rem;
+.yName {
+  font-size: 1.2rem; /* Increase font size for emphasis */
 }
 
-#compnyName{
-  border-right: 75px solid rgba(68, 128, 0, 0.918);
-  border-bottom: 3px solid rgba(68, 128, 0, 0.918);
-  border-left: 5px solid rgba(68, 128, 0, 0.918);
+#compnyName {
+  border: none; /* Remove specific border styles */
+  border-bottom: 3px solid rgba(68, 128, 0, 0.918); /* Keep bottom border only */
   border-radius: 7.5%;
-  
 }
 
-/**enhance li border**/
-.li-border{
-  border-bottom: 0.5px solid rgba(84, 205, 50, 0.897);
-  border-left: 5px solid rgba(84, 205, 50, 0.897);
-  border-radius: 7.5%;
+.li-border {
+  border: none; /* Remove specific border styles */
+  border-bottom: 1px solid rgba(84, 205, 50, 0.897); /* Keep bottom border only */
   background-color: rgba(68, 128, 0, 0.973);
   color: #eee;
-  padding: 1px 1.5px;
-  border-radius: 25%;
+  padding: 5px; /* Adjust padding for better touch interaction */
 }
 
 #hero > h2 {
-  margin-bottom: 20px;
-  word-wrap: break-word;
+  margin-bottom: 15px; /* Adjust margin for spacing */
 }
 
 #hero input[type='email'] {
   border: 1px solid #ccc;
   background-color: #fff;
   border-radius: 7.5%;
-  max-width: 275px;
+  max-width: 100%; /* Make input full width */
   width: 100%;
-  padding: 7px;
+  padding: 10px; /* Increase padding for touch-friendly input */
+  margin-bottom: 15px; /* Add margin for spacing */
 }
 
 #hero input[type='submit'] {
-  border-bottom: 0.5px solid rgba(84, 205, 50, 0.897);
-  border-left: 1.5px solid rgba(84, 205, 50, 0.897);
-  max-width: 190px;
+  border: none; /* Remove specific border styles */
+  border-bottom: 1px solid rgba(84, 205, 50, 0.897); /* Add bottom border */
+  max-width: 100%; /* Make button full width */
   width: 100%;
-  height: 30px;
-  margin: 15px 0;
-  background-color: rgba(68, 128, 0, 0.973);
+  height: 40px; /* Increase button height for better tap target */
+  margin: 15px 0; /* Adjust margin for spacing */
 }
 
 #hero input[type='submit']:hover {
-  background-color: rgba(84, 205, 50, 0.897);
-  transition: background-color 1s;
+  background-color: rgba(84, 205, 50, 0.897); /* Change background color on hover */
+  transition: background-color 0.5s; /* Add smooth transition */
 }
 
-/* Styles for small screens logo here */
-@media screen and (max-width: 767px){
-  #compnyName{
-    border-right: 12px solid rgba(68, 128, 0, 0.918);
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  #hero {
-    margin-top: 130px;
-  }
+.container {
+  padding: 10px;
 }
 
 #About-Us {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+#About-Us .desc h2 {
+  text-align: center; /* Center the heading */
+}
+
+#About-Us .grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+#accessories .level{
+  text-align: center;
 }
 
 #About-Us .icon {
@@ -228,9 +195,9 @@ nav > ul {
   align-items: center;
   justify-content: center;
   height: auto;
-  width: 20vw;
+  width: 100%;
   color: rgba(68, 128, 0, 0.973);
-}
+} 
 
 
 
@@ -239,7 +206,7 @@ nav > ul {
   flex-direction: column;
   justify-content: center;
   height: auto;
-  width: 80vw;
+  width: 100%;
   padding: 15px;
 }
 
@@ -249,17 +216,12 @@ nav > ul {
   letter-spacing: 0.6px;
 }
 
-
-
-
 .services{
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 #ourDemo {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
+  margin-top: 30px;
 }
 
 #ourDemo > iframe {
@@ -268,18 +230,15 @@ nav > ul {
 }
 
 #accessories {
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: calc(100% / 3);
+  padding: 10px;
+  width: calc(100% / 2);
   margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;
@@ -288,10 +247,9 @@ nav > ul {
 .product > .level {
   background-color: #ddd;
   color: black;
-  padding: 15px 0;
-  width: 100%;
+  padding: 10px 0;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700;/
 }
 
 .product > img{
@@ -301,11 +259,11 @@ nav > ul {
 }
 
 .product > h2 {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .product > ol { 
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .product > ol > li {
@@ -313,22 +271,15 @@ nav > ul {
 }
 
 .product > button {
-  border: 0;
-  margin: 15px 0;
+  padding: 8px 15px;
+  margin: 10px 0;
   background-color: rgba(68, 128, 0, 0.973);
   font-weight: 400;
 }
 
 .product > button:hover {
   background-color: rgba(84, 205, 50, 0.897);
-  transition: background-color 1s;
-}
-
-@media only screen and (max-width: 767px) {
-  #accessories {
-    flex-direction: column;
-  }
-
+  transition: background-color 0.5s;
 }
 
 footer {
@@ -350,4 +301,26 @@ footer > span {
   justify-content: flex-end;
   font-size: 0.9em;
   color: #444;
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 100%; /* Make the logo full width on smaller screens */
+  }
+
+  nav {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    align-items: center; /* Center the navigation items */
+  }
+
+  nav li {
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+
+  .nav-link {
+    display: block; /* Display links as block elements for better touch targets */
+    width: 100%; /* Make links full width */
+  }
 }

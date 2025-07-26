@@ -76,11 +76,6 @@ header #header-img {
   max-width: 100%; /* Ensure the logo image is responsive */
 }
 
-/**#header-img{
-  height: auto;
-}**/
-
-
 
 header nav {
   display: flex;
@@ -109,12 +104,11 @@ header nav ul {
 
 
 #hero {
-  font-size: 1rem; /* Adjust font size for better readability */
-  font-style: normal; /* Reset font style to normal for improved legibility */
+  font-size: 1rem; 
+  font-style: normal; 
   font-weight: 400;
-  text-shadow: none; /* Remove text shadow for clarity */
-
-  display: flex;
+  text-shadow: none; 
+   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -323,10 +317,8 @@ footer > span {
     display: block; /* Display links as block elements for better touch targets */
     width: 100%; /* Make links full width */
   }
-}
 
-@media only screen and (max-width: 768px) {
- #accessories {
+  #accessories {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,3 +333,7 @@ footer > span {
     margin: 10px 0;
   }
 }
+
+/* @media only screen and (max-width: 768px) {
+ 
+} */

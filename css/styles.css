@@ -113,7 +113,7 @@ header nav ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px; 
+  padding: 50px; 
   margin-top: 20px; 
 }
 
@@ -219,15 +219,6 @@ header nav ul {
   font-size: 1.1em;
 }
 
-#ourDemo {
-  margin-top: 30px;
-}
-
-#ourDemo > iframe {
-  max-width: 100%;
-  height: auto;
-}
-
 #accessories {
   margin-top: 40px;
   display: flex;
@@ -281,6 +272,35 @@ header nav ul {
   transition: background-color 0.5s;
 }
 
+#ourDemo {
+display: flex;
+ justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  margin: 50px;
+  background-color: rgba(68, 128, 0, 0.973);  text-transform: uppercase;
+  border: 3px rgba(0, 0, 0, 0.13) solid;
+  border-radius: 7.5%;
+/*   background: transparent;
+ */  cursor: pointer;
+}
+
+#ourDemo > img {
+  max-width: 100%;
+  height: auto;
+}
+
+#ourDemo .demo-info {
+  text-align: center;
+}
+/* #ourDemo h1 {
+  color: #333; /* Set text color to a dark shade for contrast */
+  font-size: 28px; /* Increase font size for better visibility */
+  font-weight: bold; /* Apply bold font weight for emphasis */
+  text-transform: uppercase; /* Convert text to uppercase for added visibility */
+  margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+ */
 footer {
   margin-top: 30px;
   background-color: #ddd;

@@ -113,8 +113,13 @@ header nav ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px; /* Add padding for spacing */
-  margin-top: 20px; /* Adjust top margin for better alignment */
+  padding: 20px; 
+  margin-top: 20px; 
+}
+
+#hero h2 {
+  text-align: center; 
+  padding: 20px; 
 }
 
 .yName {
@@ -318,6 +323,12 @@ footer > span {
     width: 100%; /* Make links full width */
   }
 
+   #hero h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px; 
+  }
+
   #accessories {
     display: flex;
     flex-direction: column;
@@ -333,7 +344,3 @@ footer > span {
     margin: 10px 0;
   }
 }
-
-/* @media only screen and (max-width: 768px) {
- 
-} */

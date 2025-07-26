@@ -238,7 +238,7 @@ header nav ul {
 
 .product {
   padding: 10px;
-  width: calc(100% / 2);
+  width: calc(100% / 1);
   margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;
@@ -311,8 +311,8 @@ footer > span {
   }
 
   nav {
-    flex-direction: column; /* Stack navigation items vertically on smaller screens */
-    align-items: center; /* Center the navigation items */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   nav li {

@@ -323,12 +323,13 @@ footer > span {
     display: block; /* Display links as block elements for better touch targets */
     width: 100%; /* Make links full width */
   }
+}
 
+@media only screen and (max-width: 768px) {
   #accessories .product {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-
 }

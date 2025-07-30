@@ -276,13 +276,12 @@ header nav ul {
 display: flex;
  justify-content: space-around;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
   margin: 50px;
   background-color: rgba(68, 128, 0, 0.973);  text-transform: uppercase;
   border: 3px rgba(0, 0, 0, 0.13) solid;
   border-radius: 7.5%;
-/*   background: transparent;
- */  cursor: pointer;
+  text-align: center;
 }
 
 #ourDemo > img {
@@ -290,17 +289,24 @@ display: flex;
   height: auto;
 }
 
-#ourDemo .demo-info {
-  text-align: center;
+.videoContainer {
+  position: relative;
+  width: hidden;
+  padding-top: 56.25%; 
 }
-/* #ourDemo h1 {
-  color: #333; /* Set text color to a dark shade for contrast */
-  font-size: 28px; /* Increase font size for better visibility */
-  font-weight: bold; /* Apply bold font weight for emphasis */
-  text-transform: uppercase; /* Convert text to uppercase for added visibility */
-  margin-bottom: 20px; /* Add margin at the bottom for spacing */
+
+#my-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
- */
+
+#ourDemo h3 {
+  margin-top: 20px;
+}
+
 footer {
   margin-top: 30px;
   background-color: #ddd;

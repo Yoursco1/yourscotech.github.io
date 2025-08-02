@@ -295,7 +295,7 @@ display: flex;
   padding-top: 56.25%; 
 }
 
-#my-video {
+/* #my-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -305,6 +305,17 @@ display: flex;
 
 #ourDemo h3 {
   margin-top: 20px;
+} */
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
 }
 
 footer {

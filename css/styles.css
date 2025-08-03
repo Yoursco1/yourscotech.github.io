@@ -1,6 +1,6 @@
-/** global element styling 
+/** global element styling **/
 
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700';**/
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
 * {
   margin: 0;
@@ -272,41 +272,6 @@ header nav ul {
   transition: background-color 0.5s;
 }
 
-#ourDemo {
-display: flex;
- justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  margin: 50px;
-  background-color: rgba(68, 128, 0, 0.973);  text-transform: uppercase;
-  border: 3px rgba(0, 0, 0, 0.13) solid;
-  border-radius: 7.5%;
-  text-align: center;
-}
-
-#ourDemo > img {
-  max-width: 100%;
-  height: auto;
-}
-
-.videoContainer {
-  position: relative;
-  width: hidden;
-  padding-top: 56.25%; 
-}
-
-/* #my-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#ourDemo h3 {
-  margin-top: 20px;
-} */
-
 #how-it-works {
   margin-top: 50px;
   display: flex;
@@ -329,7 +294,7 @@ footer {
 
 footer > ul > li {
   padding: 0 10px;
-}
+} 
 
 footer > span {
   margin-top: 5px;
@@ -380,4 +345,6 @@ footer > span {
     width: 80%;
     margin: 10px 0;
   }
+
+
 }

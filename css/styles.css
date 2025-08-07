@@ -288,7 +288,7 @@ footer {
   background-color: #ddd;
   padding: 20px;
     display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 
@@ -298,8 +298,8 @@ footer > ul > li {
 
 footer > span {
   margin-top: 5px;
-  display: flex;
-  justify-content: flex-end;
+
+
   font-size: 0.9em;
   color: #444;
 }
@@ -328,7 +328,7 @@ footer > span {
    #hero h2 {
     font-size: 24px;
     text-align: center;
-    padding: 10px; 
+    padding: 5px; 
   }
 
   #accessories {

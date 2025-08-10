@@ -88,11 +88,11 @@ header nav li {
 }
 
 header .nav-link {
-  padding: 5px 10px; /* Adjust padding for better touch interaction */
-  border-radius: 5px; /* Add rounded corners to the links */
-  background-color: #f0f0f0; /* Background color for links */
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  background-color: #f0f0f0; 
   text-decoration: none;
-  color: #333; /* Text color */
+  color: #333; 
 }
   
 
@@ -144,33 +144,26 @@ header nav ul {
   margin-bottom: 15px; /* Adjust margin for spacing */
 }
 
-#hero input[type='email'] {
-  border: 1px solid #ccc;
-  background-color: #fff;
-  border-radius: 7.5%;
-  max-width: 100%; /* Make input full width */
+
+#hero #bookPickupBtn {
+ /*  border: none;
+  border-bottom: 1px solid rgba(84, 205, 50, 0.897);  */
+  max-width: 100%; 
   width: 100%;
-  padding: 10px; /* Increase padding for touch-friendly input */
-  margin-bottom: 15px; /* Add margin for spacing */
+  height: 40px; 
+  margin: 15px 0;
+  border: 1px solid #000;
+  border-radius: 3px;
 }
 
-#hero input[type='submit'] {
-  border: none; /* Remove specific border styles */
-  border-bottom: 1px solid rgba(84, 205, 50, 0.897); /* Add bottom border */
-  max-width: 100%; /* Make button full width */
-  width: 100%;
-  height: 40px; /* Increase button height for better tap target */
-  margin: 15px 0; /* Adjust margin for spacing */
-}
-
-#hero input[type='submit']:hover {
-  background-color: rgba(84, 205, 50, 0.897); /* Change background color on hover */
-  transition: background-color 0.5s; /* Add smooth transition */
+#hero #bookPickupBtn {
+  background-color: rgba(84, 205, 50, 0.897); 
+  transition: background-color 0.5s; 
 }
 
 .container {
   padding: 10px;
-}
+} 
 
 #About-Us {
   margin-top: 20px;

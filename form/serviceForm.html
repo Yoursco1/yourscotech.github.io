@@ -1,0 +1,43 @@
+<!doctype html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/serviceForm.css"/>
+    <title>Survey Form</title>
+    </head>
+  <body>
+    <div class="container">
+    <header class="header">
+    <h1 id="title" class="text-center">Repairs Service Request Form</h1>
+    <p id="description" class="description">Your comprehensive intime repairs service that you can trust.</p>
+     </header>
+    <form id="survey-form">
+      <legend><fieldset><p>Personal Details</p>
+        <label for="name" id="name-label" >Name </label><input id="name" type="text" placeholder="enter your name" class="control" required />
+        <label for="email" id="email-label" >Email </label><input id="email" type="email" placeholder="Enter your email" class="control" required />
+        <label for="number" id="number-label" >Age <span class="clue"> (optional) </span></label>  <input id="number" type="number" min="13" max="120" placeholder="Age" class="control" /></fieldset>
+        <fieldset><p>Our technicians work diligently to diagnose and repair your devices in a timely manner, minimizing any disruption to your daily routine</p><label for="dropdown">
+          <select id="dropdown">
+          <option>Select type of device</option>
+          <option>Computer</option>
+          <option>Laptop</option>
+          <option>Phone</option>
+          <option>Tablet</option>
+          <option>Bluethoot Speaker</option>
+          <option>Other device</option>
+          </select></label></fieldset>
+          <fieldset><p>What is the name of your device manufactural</p>
+          <label for="frontend"><input type="radio" value="frontend" id="frontend" name="manufactural" class="input-radio" /> HP</label>
+          <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> Apple</label>
+           <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> ThinkPad</label> <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> Toshiba</label> <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> Nokia</label> <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> Tecno</label> <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> Infinix</label> <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> Itel</label> <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> Samsung</label> <label for="backend"><input type="radio" value="backend" id="backend" name="manufactural" class="input-radio" /> Not indicated</label>
+         </fieldset>
+          <fieldset><p>Specify the type of service requires</p><label for="screen"><input name="prefer" value="typeOfService" type="checkbox" id="screen" class="input-checkbox" />Screen Repair</label>
+          <label for="battery"><input name="prefer" value="typeOfService" type="checkbox" id="battery" class="input-checkbox" />Battery Replacement</label>
+          <label for="Charging"><input name="prefer" value="typeOfService" type="checkbox" id="Charging"  class="input-checkbox" />Charging Port Repair</label><label for="Software"><input name="prefer" value="typeOfService" type="checkbox" id="Software" class="input-checkbox" />Software Troubleshooting</label><label for="Data"><input name="prefer" value="typeOfService" type="checkbox" id="Data" class="input-checkbox" />Data Recovery</label><label for="Hardware"><input name="prefer" value="typeOfService" type="checkbox" id="Hardware" class="input-checkbox" />Hardware Replacement</label><label for="Water"><input name="prefer" value="typeOfService" type="checkbox" id="Water" class="input-checkbox" />Water Damage Repair</label><label for="Virus"><input name="prefer" value="typeOfService" type="checkbox" id="Virus" class="input-checkbox" />Virus and Malware Removal</label></fieldset>
+          <fieldset><p>Any comments or Complaints</p><label for="textArea"><textarea id="textArea" class="input-textarea" placeholder="Enter your comments here"></textarea ></label></fieldset>
+          <fieldset><label for="submit"><button id="submit" type="submit">Submit</button></label></fieldset></legend>
+        
+      </form>
+      </div>
+    </body>
+</html>

@@ -151,6 +151,14 @@ header nav ul {
 
 
 
+
+
+#hero #bookPickupBtn {
+  background-color: rgba(84, 205, 50, 0.897); 
+  transition: background-color 0.5s; 
+}
+
+
 .container {
   padding: 10px;
 } 

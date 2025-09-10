@@ -126,3 +126,58 @@ form {
   border-radius: 2px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  header.header h1 {
+    font-size: 1.5rem;
+  }
+
+  #description {
+    font-size: 1rem;
+  }
+
+  form#survey-form {
+    font-size: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  input.control,
+  select,
+  textarea.input-textarea,
+  button#submit {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  fieldset {
+    padding: 15px 10px;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .input-radio,
+  .input-checkbox {
+    width: auto;
+    margin-right: 8px;
+  }
+
+  /* For radio and checkbox labels to stack vertically */
+  fieldset p,
+  fieldset label {
+    display: block;
+  }
+}

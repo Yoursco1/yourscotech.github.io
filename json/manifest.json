@@ -1,0 +1,21 @@
+{
+  "name": "Yoursco Technologies Sales & Repairs",
+  "short_name": "YourscoApp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4fef3",
+  "theme_color": "#54cd32",
+  "description": "Fast phone and laptop repair pickup service in Ikorodu with sales & booking via WhatsApp.",
+  "icons": [
+    {
+      "src": "img/yourscoLogo1.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "img/yourscoLogo1.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
